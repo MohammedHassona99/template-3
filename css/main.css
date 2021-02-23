@@ -35,18 +35,24 @@ body {
   text-transform: capitalize;
 }
 
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(54, 60, 67, 0.8);
+}
+
+::placeholder {
+  font-size: 15px;
+}
+
 /* End Framework */
+
+/* Star Header */
 
 header {
   background-image: url("./../imgs/macbook.png");
   background-size: cover;
   color: #fff;
-}
-
-.overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(54, 60, 67, 0.8);
 }
 
 header .intro {
@@ -69,6 +75,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  cursor: pointer;
 }
 
 nav i {
@@ -86,14 +93,85 @@ header .button button {
 }
 
 header .button button:hover {
-    background-color: var(--background-color);
-    border: 1px solid var(--color);
-    color: #fff;
-    transition: all 0.5s ease-in-out;
+  background-color: var(--background-color);
+  border: 1px solid var(--color);
+  color: #fff;
+  transition: all 0.5s ease-in-out;
 }
 
 .arrow {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
+
+/* End Header */
+
+/* Star Features */
+
+.features {
+  padding: 40px 0;
+  overflow: hidden;
+}
+.features .feature {
+  width: 22%;
+  float: left;
+  margin-right: 4%;
+}
+.features .feature:last-child {
+  margin-right: 0;
+}
+.features .feature i {
+  border: 1px solid #eee;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  color: var(--color);
+}
+.features .feature i:hover {
+  background-color: var(--background-color);
+  color: #fff;
+  transform: scale(1.3);
+  margin-bottom: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.features .feature .info h3 {
+  text-transform: uppercase;
+  color: #888;
+  font-weight: normal;
+}
+.features .feature .info p {
+  color: #555;
+  line-height: 2;
+}
+/* End features*/
+/* Star Subscribe */
+.subscribe {
+  background-image: url("./../imgs/Prostokąt\ 1\ kopia.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.subscribe form {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe form input[type="email"] {
+  width: 400px;
+  margin-right: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.subscribe form input[type="submit"] {
+  background-color: var(--background-color);
+  padding: 5px 25px;
+  color: #fff;
+  border: 1px solid var(--color);
+  border-radius: 5px;
+}
+
+/* End Subscribe */
