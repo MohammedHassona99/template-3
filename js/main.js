@@ -16,4 +16,10 @@ $(function () {
       1000
     );
   });
+
+  // show hiddin items from our work
+
+  $(".show-more").click(function () {
+    $(".our-work .hidden").fadeIn();
+  });
 });
