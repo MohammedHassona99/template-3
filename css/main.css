@@ -219,3 +219,37 @@ header .button button:hover {
   transition: all 0.5s ease-in-out;
 }
 /* End Our Work */
+/* Star Testimonial */
+.testimonial {
+  background: url("./../imgs/header.jpg");
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+.testimonial .person {
+  padding: 50px 0;
+  font-size: 20px;
+}
+.testimonial .person img{
+  border-radius: 50%;
+}
+.testimonial .person p{
+  line-height: 2;
+  font-style: italic;
+}
+.testimonial .arrow-left{
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  cursor: pointer;
+}
+.testimonial i:hover{
+  color: var(--color);
+}
+.testimonial .arrow-right{
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  cursor: pointer;
+}
+/* End Testimonial */
