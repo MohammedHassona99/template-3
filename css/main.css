@@ -6,7 +6,6 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  height: 5000px;
 }
 
 .container {
@@ -384,3 +383,18 @@ header .button button:hover {
   color: 939598;
 }
 /* End Form */
+/* Star Footer */
+footer {
+  background-color: #3b434c;
+  overflow: hidden;
+  padding: 20px;
+  color: #fff;
+}
+footer .copy {
+  float: left;
+}
+
+footer .designer {
+  float: right;
+}
+/* End Footer */
