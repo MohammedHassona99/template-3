@@ -48,15 +48,15 @@ $(function () {
           .fadeIn();
         checkPerson();
       });
-    }else{
-            $(".testimonial .active").fadeOut(100, function () {
-              $(this)
-                .removeClass("active")
-                .prev(".person")
-                .addClass("active")
-                .fadeIn();
-              checkPerson();
-            });
+    } else {
+      $(".testimonial .active").fadeOut(100, function () {
+        $(this)
+          .removeClass("active")
+          .prev(".person")
+          .addClass("active")
+          .fadeIn();
+        checkPerson();
+      });
     }
   });
 });
