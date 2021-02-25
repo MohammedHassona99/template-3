@@ -17,6 +17,17 @@ $(function () {
     );
   });
 
+  // scroll to our-team
+
+  $(".hire").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $(".our-team").offset().top,
+      },
+      1000
+    );
+  });
+
   // show hiddin items from our work
 
   $(".show-more").click(function () {
